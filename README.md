@@ -66,7 +66,6 @@ This example demonstrates how to implement email/password authentication with tw
 
 - `app/api/auth/[...nextauth]/route.ts`: Auth.js configuration with 2FA implementation
 - `app/auth/signin/page.tsx`: Sign-in page
-- `app/auth/verify-2fa/page.tsx`: 2FA verification page
 - `prisma/schema.prisma`: Database schema with 2FA fields
 
 ## Learn More
