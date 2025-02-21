@@ -23,8 +23,8 @@ This example demonstrates how to implement email/password authentication with tw
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/notificationapi-com/notificationapi-authjs-nextjs-email-otp-example
-   cd notificationapi-authjs-nextjs-email-otp-example
+   git clone https://github.com/notificationapi-com/notificationapi-authjs-nextjs-email-2fa-example
+   cd notificationapi-authjs-nextjs-email-2fa-example
    ```
 
 2. Install dependencies:
