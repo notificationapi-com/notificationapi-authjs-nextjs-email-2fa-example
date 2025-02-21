@@ -21,6 +21,15 @@ export default function SignIn() {
       });
 
       if (result?.error) {
+        if (result.error === "2FA_REQUIRED") {
+          // Redirect to 2FA verification page with both email and password
+          router.push(
+            `/auth/verify-2fa?email=${encodeURIComponent(
+              email
+            )}&password=${encodeURIComponent(password)}`
+          );
+          return;
+        }
         setError("Invalid credentials");
       } else {
         router.push("/");

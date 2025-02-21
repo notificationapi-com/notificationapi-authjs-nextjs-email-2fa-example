@@ -35,11 +35,13 @@ model Session {
 }
 
 model User {
-  id       String    @id @default(cuid())
-  name     String?
-  email    String    @unique
-  password String
-  image    String?
-  accounts Account[]
-  sessions Session[]
+  id            String    @id @default(cuid())
+  name          String?
+  email         String    @unique
+  password      String
+  image         String?
+  twoFactorCode String?   // Temporary 2FA code
+  twoFactorExp  DateTime? // 2FA code expiration
+  accounts      Account[]
+  sessions      Session[]
 } 
